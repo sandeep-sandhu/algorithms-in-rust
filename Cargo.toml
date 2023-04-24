@@ -1,8 +1,16 @@
 [package]
-name = "algorithms-in-rust"
-version = "0.1.0"
+name = "algorithms_in_rust"
+version = "0.2.0"
 edition = "2021"
-
+authors = ["Sandeep Sandhu"]
+description = "A package for learning the Rust language"
+repository = "https://github.com/sandeep-sandhu/algorithms-in-rust"
+keywords = ["algorithms", "data structures"]
+readme = "README.md"
+license-file = "LICENSE"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+log = "0.4.17"
+chrono = "0.4.24"
+rand = "0.8.5"
