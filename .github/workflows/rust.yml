@@ -19,6 +19,7 @@ jobs:
     - name: Build
       run: cargo build --verbose
     - name: Run tests
-      run: cargo test --verbose
-    - name: Coverage Badge
-      uses: we-cli/coverage-badge-action@v1.0.1
+      run: cargo test --verbose -- -Z unstable-options --report-time --format json
+    # fails, since module coverage not found:
+    #- name: Coverage Badge
+    #  uses: we-cli/coverage-badge-action@v1.0.1
